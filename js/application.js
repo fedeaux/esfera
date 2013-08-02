@@ -2,7 +2,8 @@
 (function() {
 
   $(function() {
-    var f, get_iframed_document, isNumber, local_element_viewer, local_url, overlay_controller, pdf, pdfs, remote_element_viewer, remote_web_viewer, sb;
+    var base_url, bio, f, get_files_directory, get_iframed_document, isNumber, local_element_viewer, local_url, overlay_controller, pdf, pdfs, remote_element_viewer, remote_web_viewer, sb,
+      _this = this;
     console.log(JSON.stringify({
       name: "My Web App",
       main: 'index.html'
@@ -12,6 +13,10 @@
     };
     get_iframed_document = function(selector) {
       return $(selector)[0].contentWindow;
+    };
+    base_url = document.URL.replace('index.html', '');
+    get_files_directory = function() {
+      return base_url + 'files/Biologia/120.xod';
     };
     remote_element_viewer = document.getElementById('remote_viewer');
     local_element_viewer = document.getElementById('local_viewer');
@@ -38,7 +43,9 @@
       '2': 'ZDljMzU3OGEtNmE5YS00NzUzLWIxN2MtZGEwYTE4NDgxNTVm'
     };
     pdf = pdfs['1'];
+    bio = get_files_directory();
     return remote_web_viewer = new PDFTron.WebViewer({
+      initialDoc: bio,
       type: 'html5,html5Mobile',
       enableAnnotations: true,
       cloudApiId: pdf,

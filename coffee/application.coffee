@@ -8,6 +8,11 @@ $(() ->
   get_iframed_document = (selector) ->
     $(selector)[0].contentWindow
 
+  base_url = document.URL.replace 'index.html', ''
+
+  get_files_directory = () =>
+    base_url+'files/Biologia/120.xod'
+
   remote_element_viewer = document.getElementById 'remote_viewer'
   local_element_viewer = document.getElementById 'local_viewer'
   local_url = document.URL
@@ -36,8 +41,10 @@ $(() ->
 
   pdf = pdfs['1']
 
+  bio = get_files_directory()
+
   remote_web_viewer = new PDFTron.WebViewer(
-    #initialDoc : "https://api.pdftron.com/v1/view/NjYzMDI3YTMtNmYwOS00MmZmLTliMTUtMzNhN2JmMGYyMzVi"
+    initialDoc : bio #"https://api.pdftron.com/v1/view/NjYzMDI3YTMtNmYwOS00MmZmLTliMTUtMzNhN2JmMGYyMzVi"//
     type: 'html5,html5Mobile'
     enableAnnotations: true
     cloudApiId : pdf
