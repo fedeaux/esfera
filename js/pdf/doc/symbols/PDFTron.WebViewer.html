@@ -1,0 +1,1723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron PDFNet WebViewer Reference - PDFTron.WebViewer</title>
+                <link rel="stylesheet" href="../../html5/external/jquery.treeview.css" />
+                <script src="../../html5/external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../html5/external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../html5/external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({persist: "location"});	
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>PDFNet WebViewer API Reference v1.5.0</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/PDFTron.html">PDFTron</a></i><ul>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.html">.WebViewer</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.LayoutMode.html">.WebViewer.LayoutMode</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.ToolMode.html">.WebViewer.ToolMode</a></li>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFTron.WebViewer
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFTron.WebViewer Represents a WebViewer which is a document viewer built using either HTML5, Silverlight or Flash technologies.
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;WebViewer.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFTron.WebViewer.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.html#constructor">PDFTron.WebViewer</a></b>(options, element)
+							</div>
+							<div class="description">Creates a WebViewer instance and embeds it on the HTML page.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFTron.WebViewer.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#fitHeight">fitHeight</a></b>()
+								</div>
+								<div class="description">Controls if the document's Zoom property will be adjusted so that the height of the current page or panelwill exactly fit into the available space.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#fitPage">fitPage</a></b>()
+								</div>
+								<div class="description">Controls if the document's Zoom property will be adjusted so that the width and height of the current page or panelwill fit into the available space.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#fitWidth">fitWidth</a></b>()
+								</div>
+								<div class="description">Controls if the document's Zoom property will be adjusted so that the width of the current page or panelwill exactly fit into the available space.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#getCurrentPageNumber">getCurrentPageNumber</a></b>()
+								</div>
+								<div class="description">Gets the current page number of the document loaded in the WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#getInstance">getInstance</a></b>()
+								</div>
+								<div class="description">Gets the instance of the ReaderControl object loaded by WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#getLayoutMode">getLayoutMode</a></b>()
+								</div>
+								<div class="description">Gets the layout mode of the document in the WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#getPageCount">getPageCount</a></b>()
+								</div>
+								<div class="description">Gets the total number of pages of the loaded document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#getShowSideWindow">getShowSideWindow</a></b>()
+								</div>
+								<div class="description">Gets the value whether the side window is visible or not.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#getToolMode">getToolMode</a></b>()
+								</div>
+								<div class="description">Gets the current tool mode of the WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#getZoomLevel">getZoomLevel</a></b>()
+								</div>
+								<div class="description">Gets the zoom level of the document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#goToFirstPage">goToFirstPage</a></b>()
+								</div>
+								<div class="description">Goes to the first page of the document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#goToLastPage">goToLastPage</a></b>()
+								</div>
+								<div class="description">Goes to the last page of the document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#goToNextPage">goToNextPage</a></b>()
+								</div>
+								<div class="description">Goes to the next page of the document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#goToPrevPage">goToPrevPage</a></b>()
+								</div>
+								<div class="description">Goes to the previous page of the document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#isMobileDevice">isMobileDevice</a></b>()
+								</div>
+								<div class="description">Detects if the current browser is on a mobile device.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#loadDocument">loadDocument</a></b>(url)
+								</div>
+								<div class="description">Loads a document to the WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#rotateClockwise">rotateClockwise</a></b>()
+								</div>
+								<div class="description">Rotates the document in the WebViewer clockwise.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#rotateCounterClockwise">rotateCounterClockwise</a></b>()
+								</div>
+								<div class="description">Rotates the document in the WebViewer counter-clockwise.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#searchText">searchText</a></b>(pattern, searchMode)
+								</div>
+								<div class="description">Searches the loaded document finding for the matching pattern.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#setCurrentPageNumber">setCurrentPageNumber</a></b>(pageNumber)
+								</div>
+								<div class="description">Sets the current page number of the document loaded in the WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#setLayoutMode">setLayoutMode</a></b>(layout)
+								</div>
+								<div class="description">Sets the layout mode of the document in the WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#setOnPageChangeCallback">setOnPageChangeCallback</a></b>(callback)
+								</div>
+								<div class="description">Registers a callback when the document's page number is changed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#setOnPageZoomCallback">setOnPageZoomCallback</a></b>(callback)
+								</div>
+								<div class="description">Registers a callback when the document's zoom level is changed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#setShowSideWindow">setShowSideWindow</a></b>(value)
+								</div>
+								<div class="description">Sets the value whether the side window is visible or not.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#setToolMode">setToolMode</a></b>(toolMode)
+								</div>
+								<div class="description">Sets the tool mode of the WebViewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#setZoomLevel">setZoomLevel</a></b>(zoomLevel)
+								</div>
+								<div class="description">Sets the zoom level of the document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#zoom">zoom</a></b>()
+								</div>
+								<div class="description">Controls if the document's Zoom property will be freely adjusted and not constrained with the width and height of thecurrent page or panel.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the events documented in the class PDFTron.WebViewer.">
+					<caption>Event Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Event Attributes</th>
+							<th scope="col">Event Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#event:displayModeChanged">displayModeChanged</a></b>()
+								</div>
+								<div class="description">A jQuery event bound on the element, triggered when the display mode has changed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#event:documentLoaded">documentLoaded</a></b>()
+								</div>
+								<div class="description">A jQuery event bound on the element, triggered when a document has been loaded in the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#event:pageChanged">pageChanged</a></b>()
+								</div>
+								<div class="description">A jQuery event bound on the element, triggered when the page number has changed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#event:ready">ready</a></b>()
+								</div>
+								<div class="description">A jQuery event bound on the element, triggered when the viewer is ready, before a document is loaded.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#event:toolModeChanged">toolModeChanged</a></b>()
+								</div>
+								<div class="description">A jQuery event bound on the element, triggered when the tool mode has changed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFTron.WebViewer.html#event:zoomChanged">zoomChanged</a></b>()
+								</div>
+								<div class="description">A jQuery event bound on the element, triggered when the zoom level has changed.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFTron.WebViewer</b>(options, element)
+				</div>
+				
+				<div class="description">
+					Creates a WebViewer instance and embeds it on the HTML page.
+					
+				</div>
+				
+				
+				
+				<pre class="code">e.g. var viewerElement = document.getElementById('viewer');myWebViewer = new PDFTron.WebViewer({	type: "html5,html5Mobile,silverlight,flash",	initialDoc : "/host/GettingStarted.xod",	enableAnnotations: true,	streaming : false	}, viewerElement);</pre>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>options</b>
+								
+							</dt>
+								<dd>options passed to the specific WebViewer. Options can have the following:<ul><li><b>type:</b> the type of WebViewer to load. Values must be comma-separated in order of preferred WebViewer.</li><li><b>initialDoc:</b> the URL path to a xod document to load on startup, it is recommended to use absolute paths.</li><li><b>streaming:</b> a boolean indicating whether to use http or streaming PartRetriever, it is recommended to keep streaming false for better performance. (default false)</li><li><b>enableAnnotations:</b> a boolean to enable annotations on supported viewer types.(HTML5 only, default false)</li><li><b>enableOfflineMode:</b> a boolean to enable offline mode.(HTML5 only, default false)</li><li><b>enableReadOnlyMode:</b> a boolean to enable annotations read-only mode.(HTML5 only, default false)</li><li><b>config:</b> a URL path to a JavaScript configuration file that holds UI customizations. (HTML5 only)</li><li><b>serverUrl:</b> a URL to the server-side script that handles annotations. (HTML5 only, required for full annotation support)</li><li><b>annotationUser:</b> a user identifier for annotations. All annotations created will have this as the author. It is used for permission checking: user only permitted to modify annotations where annotationUser and author matches. (HTML5 only)</li><li><b>annotationAdmin:</b> a boolean indicating this user has permission to modify all annotations, even if the annotationUser and author does not match. (HTML5 only)</li><li><b>documentId:</b> an identifier for the document to be used with annotations. (HTML5 only, required for full annotation support)</li><li><b>cloudApiId:</b> the share ID or session ID created from <a href="http://www.pdftron.com/pdfnet/cloud" target="_blank">PDFNet Cloud API</a>. Note: the browser must have CORS support. (optional, ignored when initialDoc is also set)</li><li><b>custom:</b> a string of custom data that can be retrieved by the ReaderControl (HTML5 only)</li><li><b>encryption:</b> an object containing encryption properties (HTML5 and Flash only)</li><li><b>silverlightObjectParams:</b> an object containing properties that will be adding as param tags under the Silverlight object tag (Silverlight only)</li><li><b>showSilverlightControls:</b> [Deprecated] a boolean to show/hide the controls on the Silverlight ReaderControl. (Silverlight only, default true)</li><li><b>errorPage:</b> a path to an HTML page to display errors. (optional)</li><li><b>path:</b> an alternative path to the WebViewer root folder. (optional)</li><li><b>html5:</b> an alternative path to the HTML5 WebViewer, relative to the "path" option. (optional)</li><li><b>html5Mobile:</b> an alternative path to the HTML5 Mobile WebViewer, relative to the "path" option. (optional)</li><li><b>silverlight:</b> an alternative path to the Silverlight WebViewer, relative to the "path" option. (optional)</li><li><b>flash:</b> an alternative path to the Flash WebViewer, relative to the "path" option. (optional)</li></ul></dd>
+						
+							<dt>
+								 <b>element</b>
+								
+							</dt>
+								<dd>the html element that will contain the web viewer (e.g. the <div> element that will be parent of the WebViewer). This can be obtained through document.getElementById(), or through JQuery selector.</dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+						<dl class="detailList">
+						<dt class="heading">Returns:</dt>
+						
+								<dd><span class="light fixedFont">{<a href="../symbols/PDFTron.WebViewer.html">PDFTron.WebViewer</a>}</span> the instance of the WebViewer class</dd>
+						
+						</dl>
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="fitHeight"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>fitHeight</b>()
+					
+					</div>
+					<div class="description">
+						Controls if the document's Zoom property will be adjusted so that the height of the current page or panelwill exactly fit into the available space. Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="fitPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>fitPage</b>()
+					
+					</div>
+					<div class="description">
+						Controls if the document's Zoom property will be adjusted so that the width and height of the current page or panelwill fit into the available space.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="fitWidth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>fitWidth</b>()
+					
+					</div>
+					<div class="description">
+						Controls if the document's Zoom property will be adjusted so that the width of the current page or panelwill exactly fit into the available space. Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getCurrentPageNumber"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getCurrentPageNumber</b>()
+					
+					</div>
+					<div class="description">
+						Gets the current page number of the document loaded in the WebViewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>the current page number of the document</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getInstance"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getInstance</b>()
+					
+					</div>
+					<div class="description">
+						Gets the instance of the ReaderControl object loaded by WebViewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>a ReaderControl instance</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLayoutMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getLayoutMode</b>()
+					
+					</div>
+					<div class="description">
+						Gets the layout mode of the document in the WebViewer.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>the layout mode of the document</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageCount"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getPageCount</b>()
+					
+					</div>
+					<div class="description">
+						Gets the total number of pages of the loaded document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>the total number of pages of the loaded document</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getShowSideWindow"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getShowSideWindow</b>()
+					
+					</div>
+					<div class="description">
+						Gets the value whether the side window is visible or not.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>true if the side window is shown</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getToolMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getToolMode</b>()
+					
+					</div>
+					<div class="description">
+						Gets the current tool mode of the WebViewer.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>the current tool mode of the WebViewer</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getZoomLevel"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getZoomLevel</b>()
+					
+					</div>
+					<div class="description">
+						Gets the zoom level of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>the zoom level of the document</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="goToFirstPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>goToFirstPage</b>()
+					
+					</div>
+					<div class="description">
+						Goes to the first page of the document. Makes the document viewer display the first page of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="goToLastPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>goToLastPage</b>()
+					
+					</div>
+					<div class="description">
+						Goes to the last page of the document. Makes the document viewer display the last page of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="goToNextPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>goToNextPage</b>()
+					
+					</div>
+					<div class="description">
+						Goes to the next page of the document. Makes the document viewer display the next page of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="goToPrevPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>goToPrevPage</b>()
+					
+					</div>
+					<div class="description">
+						Goes to the previous page of the document. Makes the document viewer display the previous page of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="isMobileDevice"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isMobileDevice</b>()
+					
+					</div>
+					<div class="description">
+						Detects if the current browser is on a mobile device.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> true if this page is loaded on a mobile device.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="loadDocument"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>loadDocument</b>(url)
+					
+					</div>
+					<div class="description">
+						Loads a document to the WebViewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>url</b>
+									
+								</dt>
+								<dd>url of the document to be loaded (relative urls may not work, it is recommended to use absolute urls)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="rotateClockwise"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>rotateClockwise</b>()
+					
+					</div>
+					<div class="description">
+						Rotates the document in the WebViewer clockwise.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="rotateCounterClockwise"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>rotateCounterClockwise</b>()
+					
+					</div>
+					<div class="description">
+						Rotates the document in the WebViewer counter-clockwise.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="searchText"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>searchText</b>(pattern, searchMode)
+					
+					</div>
+					<div class="description">
+						Searches the loaded document finding for the matching pattern.Search mode includes:<ul><li>None</li><li>CaseSensitive</li><li>WholeWord</li><li>SearchUp</li><li>PageStop</li><li>ProvideQuads</li><li>AmbientString</li></ul>
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>pattern</b>
+									
+								</dt>
+								<dd>the pattern to look for</dd>
+							
+								<dt>
+									<b>searchMode</b>
+									
+								</dt>
+								<dd>must one or a combination of the above search modes. To                     combine search modes, simply pass them as comma separated                     values in one string. i.e. "CaseSensitive,WholeWord"</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setCurrentPageNumber"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setCurrentPageNumber</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Sets the current page number of the document loaded in the WebViewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>pageNumber</b>
+									
+								</dt>
+								<dd>the page number of the document to set</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLayoutMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLayoutMode</b>(layout)
+					
+					</div>
+					<div class="description">
+						Sets the layout mode of the document in the WebViewer.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>layout</b>
+									
+								</dt>
+								<dd>the layout mode to set (see PDFTron.WebViewer.LayoutMode)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setOnPageChangeCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setOnPageChangeCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Registers a callback when the document's page number is changed. (Silverlight only)[Deprecated]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>callback</b>
+									
+								</dt>
+								<dd>the JavaScript function to invoke when the document page number is changed</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setOnPageZoomCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setOnPageZoomCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Registers a callback when the document's zoom level is changed. (Silverlight only)[Deprecated]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>callback</b>
+									
+								</dt>
+								<dd>the JavaScript function to invoke when the document zoom level is changed</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setShowSideWindow"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setShowSideWindow</b>(value)
+					
+					</div>
+					<div class="description">
+						Sets the value whether the side window is visible or not.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>value</b>
+									
+								</dt>
+								<dd>true to show the side window</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setToolMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setToolMode</b>(toolMode)
+					
+					</div>
+					<div class="description">
+						Sets the tool mode of the WebViewer.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>toolMode</b>
+									
+								</dt>
+								<dd>must be one of the PDFTron.WebViewer.ToolMode</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setZoomLevel"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setZoomLevel</b>(zoomLevel)
+					
+					</div>
+					<div class="description">
+						Sets the zoom level of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>zoomLevel</b>
+									
+								</dt>
+								<dd>the new zoom level to set</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="zoom"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>zoom</b>()
+					
+					</div>
+					<div class="description">
+						Controls if the document's Zoom property will be freely adjusted and not constrained with the width and height of thecurrent page or panel.Not supported for mobile viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+				<div class="sectionTitle">
+					Event Detail
+				</div>
+				
+					<a name="event:displayModeChanged"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>displayModeChanged</b>()
+					
+					</div>
+					<div class="description">
+						A jQuery event bound on the element, triggered when the display mode has changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">e.g. $('#viewer').bind('displayModeChanged', function(event, data){//event triggered});</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:documentLoaded"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>documentLoaded</b>()
+					
+					</div>
+					<div class="description">
+						A jQuery event bound on the element, triggered when a document has been loaded in the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">e.g. $('#viewer').bind('documentLoaded', function(event, data){//event triggered});</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:pageChanged"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>pageChanged</b>()
+					
+					</div>
+					<div class="description">
+						A jQuery event bound on the element, triggered when the page number has changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">e.g. $('#viewer').bind('pageChanged', function(event, data){//event triggered});</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:ready"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>ready</b>()
+					
+					</div>
+					<div class="description">
+						A jQuery event bound on the element, triggered when the viewer is ready, before a document is loaded.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">e.g. $('#viewer').bind('ready', function(event, data){//event triggered});</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:toolModeChanged"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>toolModeChanged</b>()
+					
+					</div>
+					<div class="description">
+						A jQuery event bound on the element, triggered when the tool mode has changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">e.g. $('#viewer').bind('toolModeChanged', function(event, data){//event triggered});</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:zoomChanged"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>zoomChanged</b>()
+					
+					</div>
+					<div class="description">
+						A jQuery event bound on the element, triggered when the zoom level has changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">e.g. $('#viewer').bind('zoomChanged', function(event, data){//event triggered});</pre>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Fri Jun 28 2013 12:55:22 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

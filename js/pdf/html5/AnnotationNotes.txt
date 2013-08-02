@@ -1,0 +1,49 @@
+
+Annotation components
+==============================
+AnnotationPanel.html contains the UI controls for selecting tools, annotation properties and listing annotations.
+
+CustomTools.js contains a custom annotation and its corresponding custom tool.
+
+ReaderControl.js has the option to enable or disable annotations
+
+DocumentViewer.AnnotationManager manages all annotations and its states associated with the document.
+
+Steps to creating a custom annotation
+=============================================
+-create a new annotation object, extending from one of the Annotations base class (e.g. Annotations.MarkupAnnotations)
+
+-override the draw method with custom code
+
+-draw method takes a canvas context as parameter, do all canvas drawing here
+
+
+Steps to creating a custom annotation tool
+=============================================
+-create a new tool object, extending from the Tools base class
+
+-override UI event callback methods as required
+(mouseLeftDown, mouseMove, keyDown, etc.)
+
+-call the base class's method on overridden methods to ensure that mouse page coordinates are set properly
+(by default, 2 page coordinates are set: first point when mouse left down, second point when mouse is dragged or when mouse left up)
+
+-in one of the callbacks, create a new instance of Annotation.
+-use the annotation manager to add, delete or modify annotation.
+(DocumentViewer.GetAnnotationManager())
+
+
+-register the custom annotation tool with DocumentViewer
+(e.g. exports.CoreControls.DocumentViewer.prototype.ToolModes.CustomLine = CustomLineTool;)
+
+
+-lastly, add a new tool item to AnnotationPanel.html
+(when the new tool item is clicked, set the DocumentViewer's tool mode to the newly registered custom tool)
+
+
+
+Creating annotations programmatically
+==========================================
+-Create the annotations during onDocumentLoaded in ReaderControl
+1. load the annotations from xml
+2. create directly by creating new Annotation objects, and adding them to the annotation manager through AnnotationManager.AddAnnotations();

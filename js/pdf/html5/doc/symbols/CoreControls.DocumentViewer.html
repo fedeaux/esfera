@@ -1,0 +1,2932 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron PDFNet WebViewer Reference - CoreControls.DocumentViewer</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({persist: "location"});	
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>PDFNet HTML5 WebViewer API Reference v1.5.0.19671</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	</ul></li><li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.ToolModes.html">.DocumentViewer.ToolModes</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class CoreControls.DocumentViewer
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				Represents a full-featured control used for displaying a Document. The viewer supports text selection and text search, and several page view modes.
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\DocumentViewer.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class CoreControls.DocumentViewer.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/CoreControls.DocumentViewer.html#constructor">CoreControls.DocumentViewer</a></b>()
+							</div>
+							<div class="description">Creates a new empty DocumentViewer.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class CoreControls.DocumentViewer.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#CloseDocument">CloseDocument</a></b>()
+								</div>
+								<div class="description">Reinitializes data and clears the viewer area content.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#DisplayBookmark">DisplayBookmark</a></b>(bookmark)
+								</div>
+								<div class="description">Scrolls the viewer so that the position of the bookmark is in the upper-left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#DisplayFirstPage">DisplayFirstPage</a></b>()
+								</div>
+								<div class="description">Scrolls the viewer so that the upper-left corner of the Document's first page is in the upper-left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#DisplayLastPage">DisplayLastPage</a></b>()
+								</div>
+								<div class="description">Scrolls the viewer so that the upper-left corner of the Document's last page is in the upper-left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#DisplaySearchResult">DisplaySearchResult</a></b>(result, jump)
+								</div>
+								<div class="description">Scrolls the viewer so that the position of the search result is in the middle of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetAnnotationManager">GetAnnotationManager</a></b>()
+								</div>
+								<div class="description">Returns the AnnotationManager used by this DocumentViewer</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetCurrentPage">GetCurrentPage</a></b>()
+								</div>
+								<div class="description">Returns the current page number</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetDisplayModeManager">GetDisplayModeManager</a></b>()
+								</div>
+								<div class="description">Returns the DisplayModeManager used by this DocumentViewer</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetDocument">GetDocument</a></b>()
+								</div>
+								<div class="description">Returns the Document that is currently being displayed by the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetFitMode">GetFitMode</a></b>()
+								</div>
+								<div class="description">Returns the current fit mode.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetMargin">GetMargin</a></b>()
+								</div>
+								<div class="description">Returns a pixel value, representing the left, right, top and bottom margins.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetPageCount">GetPageCount</a></b>()
+								</div>
+								<div class="description">Returns the number of pages in a document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetPageZoom">GetPageZoom</a></b>(pageIndex)
+								</div>
+								<div class="description">Get the zoom value for a particular page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetRotation">GetRotation</a></b>()
+								</div>
+								<div class="description">Returns the current viewing rotation.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetSelectedText">GetSelectedText</a></b>()
+								</div>
+								<div class="description">Returns the text selected by text selection tool or search.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetToolMode">GetToolMode</a></b>()
+								</div>
+								<div class="description">Returns the current tool.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#GetZoom">GetZoom</a></b>()
+								</div>
+								<div class="description">Returns the current zoom level</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#LoadAsync">LoadAsync</a></b>(partRetriever)
+								</div>
+								<div class="description">Initialize the viewer and load a .xod document into the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#RemoveContent">RemoveContent</a></b>()
+								</div>
+								<div class="description">Removes all the page content from the DOM.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#RotateClockwise">RotateClockwise</a></b>()
+								</div>
+								<div class="description">Rotates all pages in the currently displayed document clockwise by 90 degrees.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#RotateCounterClockwise">RotateCounterClockwise</a></b>()
+								</div>
+								<div class="description">Rotates all pages in the currently displayed document counter-clockwise by 90 degrees.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#ScrollViewUpdated">ScrollViewUpdated</a></b>()
+								</div>
+								<div class="description">This function must be called after modifying the ScrollView (#DocumentViewer) element's dimensions or properties.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#Select">Select</a></b>(pt1, pt2)
+								</div>
+								<div class="description">Selects the text content of the document given two page coordinates.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetAlertCallback">SetAlertCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the callback called in response to permission alerts</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetCurrentPage">SetCurrentPage</a></b>(pageNumber)
+								</div>
+								<div class="description">Sets the current page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetDblClickCallback">SetDblClickCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback for a double click event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetDisplayModeUpdatedCallback">SetDisplayModeUpdatedCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the function to call after the display mode has been updated.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetDisplayPageLocationCallback">SetDisplayPageLocationCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the callback called when a page location should be displayed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetDocumentLoadedCallback">SetDocumentLoadedCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the callback called in response to the Loaded event of the document.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetFitMode">SetFitMode</a></b>(fitMode)
+								</div>
+								<div class="description">Sets how the document will scale to fit the size of the scrollviewer's viewport.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetFitModeUpdatedCallback">SetFitModeUpdatedCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the function to call after the fit mode has been updated.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetKeyDownCallback">SetKeyDownCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a KeyDown event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetKeyUpCallback">SetKeyUpCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a KeyUp event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetLinkReadyCallback">SetLinkReadyCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the callback called when a link is created on the page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMargin">SetMargin</a></b>(margin)
+								</div>
+								<div class="description">Set the pixel value to use for the left, right, top and bottom margins.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMouseEnterCallback">SetMouseEnterCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a MouseEnter event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMouseLeaveCallback">SetMouseLeaveCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a MouseLeave event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMouseLeftDownCallback">SetMouseLeftDownCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a MouseLeftButtonDown event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMouseLeftUpCallback">SetMouseLeftUpCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a MouseLeftButtonUp event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMouseMoveCallback">SetMouseMoveCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a MouseLeave event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMouseRightDownCallback">SetMouseRightDownCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a MouseRightButtonDown event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetMouseRightUpCallback">SetMouseRightUpCallback</a></b>(callback)
+								</div>
+								<div class="description">Set a callback to a MouseRightButtonUp event in the DocumentViewer's viewing area.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetPageCompleteCallback">SetPageCompleteCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the callback called when a page has been completely rendered.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetPageNumberUpdatedCallback">SetPageNumberUpdatedCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the function to call after the page number has been updated.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetPageZoom">SetPageZoom</a></b>(pageIndex, zoom)
+								</div>
+								<div class="description">Sets the zoom for a particular page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetPermissionCheckCallback">SetPermissionCheckCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the callback to perform the permision checking for annotations</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetRotation">SetRotation</a></b>(pageRotation)
+								</div>
+								<div class="description">Sets the current viewing rotation.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetTextHighlightColor">SetTextHighlightColor</a></b>(color)
+								</div>
+								<div class="description">Sets the color to use when highlighting text from text selection or searching.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetTextSelectedCallback">SetTextSelectedCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the function to call after text selection has been changed.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetToolMode">SetToolMode</a></b>(toolMode)
+								</div>
+								<div class="description">Sets the tool mode.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetToolModeUpdatedCallback">SetToolModeUpdatedCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the function to call after the tool mode has been updated.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#SetZoomUpdatedCallback">SetZoomUpdatedCallback</a></b>(callback)
+								</div>
+								<div class="description">Sets the function to call after zoom has been updated.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#StopPageRender">StopPageRender</a></b>(pageIndex)
+								</div>
+								<div class="description">Stops the rendering of the specified page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#TextSearchInit">TextSearchInit</a></b>(pattern, mode, fullSearch, onSearchCallback(result))
+								</div>
+								<div class="description">Searches for a particular text string on the currently displayed Document, starting on the current page.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#UpdateView">UpdateView</a></b>(visiblePages, currentPageIndex)
+								</div>
+								<div class="description">Removes previously drawn pages that are no longer visible anddraws pages that are visible and have not been drawn.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#UpdateVisiblePages">UpdateVisiblePages</a></b>()
+								</div>
+								<div class="description">Notifies the document viewer that the visible pages have changedbut does not draw any pages.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#ZoomTo">ZoomTo</a></b>(zoom, x, y)
+								</div>
+								<div class="description">Adjusts the viewer's zoom factor, and positions the point (x,y) at the upper left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>CoreControls.DocumentViewer</b>()
+				</div>
+				
+				<div class="description">
+					Creates a new empty DocumentViewer.
+					
+				</div>
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="CloseDocument"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>CloseDocument</b>()
+					
+					</div>
+					<div class="description">
+						Reinitializes data and clears the viewer area content.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="DisplayBookmark"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>DisplayBookmark</b>(bookmark)
+					
+					</div>
+					<div class="description">
+						Scrolls the viewer so that the position of the bookmark is in the upper-left corner of the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Bookmark}</span> <b>bookmark</b>
+									
+								</dt>
+								<dd>A bookmark that specifies the location to scroll to. Returned by <a href="../symbols/CoreControls.Document.html#GetBookmarks">CoreControls.Document#GetBookmarks</a>.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="DisplayFirstPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>DisplayFirstPage</b>()
+					
+					</div>
+					<div class="description">
+						Scrolls the viewer so that the upper-left corner of the Document's first page is in the upper-left corner of the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="DisplayLastPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>DisplayLastPage</b>()
+					
+					</div>
+					<div class="description">
+						Scrolls the viewer so that the upper-left corner of the Document's last page is in the upper-left corner of the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="DisplaySearchResult"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>DisplaySearchResult</b>(result, jump)
+					
+					</div>
+					<div class="description">
+						Scrolls the viewer so that the position of the search result is in the middle of the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>result</b>
+									
+								</dt>
+								<dd>The result of a search, DocumentViewer.SearchResults. Returned by onSearchCallback in <a href="../symbols/CoreControls.DocumentViewer.html#TextSearchInit">CoreControls.DocumentViewer#TextSearchInit</a>.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>jump</b>
+									
+								</dt>
+								<dd>The callback for navigating to the found result.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetAnnotationManager"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{AnnotationManager}</span>
+					<b>GetAnnotationManager</b>()
+					
+					</div>
+					<div class="description">
+						Returns the AnnotationManager used by this DocumentViewer
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{AnnotationManager}</span> an instance of AnnotationManager</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetCurrentPage"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>GetCurrentPage</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current page number
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The current 1-indexed page number.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetDisplayModeManager"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{DisplayModeManager}</span>
+					<b>GetDisplayModeManager</b>()
+					
+					</div>
+					<div class="description">
+						Returns the DisplayModeManager used by this DocumentViewer
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{DisplayModeManager}</span> an instance of DisplayModeManager</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetDocument"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/CoreControls.Document.html">CoreControls.Document</a>}</span>
+					<b>GetDocument</b>()
+					
+					</div>
+					<div class="description">
+						Returns the Document that is currently being displayed by the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/CoreControls.Document.html">CoreControls.Document</a>}</span> returns the current document.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetFitMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{DocumentViewer.FitMode}</span>
+					<b>GetFitMode</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current fit mode.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{DocumentViewer.FitMode}</span> The current fit mode.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetMargin"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>GetMargin</b>()
+					
+					</div>
+					<div class="description">
+						Returns a pixel value, representing the left, right, top and bottom margins.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The margin value.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetPageCount"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>GetPageCount</b>()
+					
+					</div>
+					<div class="description">
+						Returns the number of pages in a document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The number of the pages in the current document.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetPageZoom"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>GetPageZoom</b>(pageIndex)
+					
+					</div>
+					<div class="description">
+						Get the zoom value for a particular page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The page index.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetRotation"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{CoreControls.PageRotation}</span>
+					<b>GetRotation</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current viewing rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">PageRotation.e_0 = 0 (0 degress) <br/>PageRotation.e_90 = 1 (90 degress) <br/>PageRotation.e_180 = 2 (180 degress) <br/>PageRotation.e_270 = 3 (270 degress) <br/></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{CoreControls.PageRotation}</span> The current viewing rotation.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetSelectedText"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>GetSelectedText</b>()
+					
+					</div>
+					<div class="description">
+						Returns the text selected by text selection tool or search.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{string}</span> Selected text.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetToolMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{DocumentViewer.ToolModes}</span>
+					<b>GetToolMode</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current tool.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{DocumentViewer.ToolModes}</span> The current tool mode.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="GetZoom"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>GetZoom</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current zoom level
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The current zoom level.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="LoadAsync"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>LoadAsync</b>(partRetriever)
+					
+					</div>
+					<div class="description">
+						Initialize the viewer and load a .xod document into the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{HttpPartRetriever|LocalPartRetriever|StreamingPartRetriever}</span> <b>partRetriever</b>
+									
+								</dt>
+								<dd>An instance of PartRetriever.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="RemoveContent"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>RemoveContent</b>()
+					
+					</div>
+					<div class="description">
+						Removes all the page content from the DOM.  Also clear the cache if the zoom or rotation has changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="RotateClockwise"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>RotateClockwise</b>()
+					
+					</div>
+					<div class="description">
+						Rotates all pages in the currently displayed document clockwise by 90 degrees.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="RotateCounterClockwise"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>RotateCounterClockwise</b>()
+					
+					</div>
+					<div class="description">
+						Rotates all pages in the currently displayed document counter-clockwise by 90 degrees.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="ScrollViewUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>ScrollViewUpdated</b>()
+					
+					</div>
+					<div class="description">
+						This function must be called after modifying the ScrollView (#DocumentViewer) element's dimensions or properties.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="Select"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>Select</b>(pt1, pt2)
+					
+					</div>
+					<div class="description">
+						Selects the text content of the document given two page coordinates.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>pt1</b>
+									
+								</dt>
+								<dd>Starting page coordinate. Requires properties x, y and pageIndex.</dd>
+							
+								<dt>
+									<b>pt2</b>
+									
+								</dt>
+								<dd>Ending page coordinate. Requires properties x, y and pageIndex.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetAlertCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetAlertCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the callback called in response to permission alerts
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetCurrentPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetCurrentPage</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Sets the current page. Updates the current page and jumps to it.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageNumber</b>
+									
+								</dt>
+								<dd>The page number to jump to.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetDblClickCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetDblClickCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback for a double click event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetDisplayModeUpdatedCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetDisplayModeUpdatedCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the function to call after the display mode has been updated.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetDisplayPageLocationCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetDisplayPageLocationCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the callback called when a page location should be displayed.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetDocumentLoadedCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetDocumentLoadedCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the callback called in response to the Loaded event of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetFitMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetFitMode</b>(fitMode)
+					
+					</div>
+					<div class="description">
+						Sets how the document will scale to fit the size of the scrollviewer's viewport.  Also re-renders content to the appropriate zoom level.  Only renders if a document has been loaded.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{DocumentViewer.FitMode}</span> <b>fitMode</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetFitModeUpdatedCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetFitModeUpdatedCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the function to call after the fit mode has been updated.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetKeyDownCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetKeyDownCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a KeyDown event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetKeyUpCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetKeyUpCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a KeyUp event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetLinkReadyCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetLinkReadyCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the callback called when a link is created on the page.The callback argument provides the HTML span element that represents the link, and a Link object that contains more information about the link.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMargin"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMargin</b>(margin)
+					
+					</div>
+					<div class="description">
+						Set the pixel value to use for the left, right, top and bottom margins.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>margin</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMouseEnterCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMouseEnterCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a MouseEnter event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMouseLeaveCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMouseLeaveCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a MouseLeave event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMouseLeftDownCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMouseLeftDownCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a MouseLeftButtonDown event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMouseLeftUpCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMouseLeftUpCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a MouseLeftButtonUp event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMouseMoveCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMouseMoveCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a MouseLeave event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMouseRightDownCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMouseRightDownCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a MouseRightButtonDown event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetMouseRightUpCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetMouseRightUpCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Set a callback to a MouseRightButtonUp event in the DocumentViewer's viewing area.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetPageCompleteCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetPageCompleteCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the callback called when a page has been completely rendered.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetPageNumberUpdatedCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetPageNumberUpdatedCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the function to call after the page number has been updated.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetPageZoom"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetPageZoom</b>(pageIndex, zoom)
+					
+					</div>
+					<div class="description">
+						Sets the zoom for a particular page. Should be followed by a call to UpdateView to actually render the page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The page index.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{float}</span> <b>zoom</b>
+									
+								</dt>
+								<dd>Zoom value for page.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetPermissionCheckCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetPermissionCheckCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the callback to perform the permision checking for annotations
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetRotation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetRotation</b>(pageRotation)
+					
+					</div>
+					<div class="description">
+						Sets the current viewing rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{CoreControls.PageRotation}</span> <b>pageRotation</b>
+									
+								</dt>
+								<dd>desired viewing rotation.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetTextHighlightColor"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetTextHighlightColor</b>(color)
+					
+					</div>
+					<div class="description">
+						Sets the color to use when highlighting text from text selection or searching.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>color</b>
+									
+								</dt>
+								<dd>The color to set.  eg 'rgba(0, 0, 200, 0.3)'</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetTextSelectedCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetTextSelectedCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the function to call after text selection has been changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetToolMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetToolMode</b>(toolMode)
+					
+					</div>
+					<div class="description">
+						Sets the tool mode. Also removes selection caused by text selection or search.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{DocumentViewer.ToolModes}</span> <b>toolMode</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetToolModeUpdatedCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetToolModeUpdatedCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the function to call after the tool mode has been updated.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="SetZoomUpdatedCallback"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>SetZoomUpdatedCallback</b>(callback)
+					
+					</div>
+					<div class="description">
+						Sets the function to call after zoom has been updated.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>callback</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="StopPageRender"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>StopPageRender</b>(pageIndex)
+					
+					</div>
+					<div class="description">
+						Stops the rendering of the specified page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The index of the page who's rendering should be stopped.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="TextSearchInit"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>TextSearchInit</b>(pattern, mode, fullSearch, onSearchCallback(result))
+					
+					</div>
+					<div class="description">
+						Searches for a particular text string on the currently displayed Document, starting on the current page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>pattern</b>
+									
+								</dt>
+								<dd>The text to search for.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{DocumentViewer.SearchMode}</span> <b>mode</b>
+									
+								</dt>
+								<dd>The options for search, controlling options such as case sensitivity and search direction.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>fullSearch</b>
+									
+								</dt>
+								<dd>If true, a search of the entire document will be performed. Otherwise, a single search will be perfomed.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>onSearchCallback(result)</b>
+									
+								</dt>
+								<dd>The callback function to call when the search completes. The search may complete when the search term is found, when the entire document has been searched, and, depending on the search options, at the end of every page. Parameter result: DocumentViewer.SearchResults.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="UpdateView"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>UpdateView</b>(visiblePages, currentPageIndex)
+					
+					</div>
+					<div class="description">
+						Removes previously drawn pages that are no longer visible anddraws pages that are visible and have not been drawn.If visiblePages are provided then those pages are rendered otherwise visiblePages are calculateddepending on where the DIV elements for the pages are located.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>visiblePages</b>
+									
+								</dt>
+								<dd>An array of integers representing the pages to render.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>currentPageIndex</b>
+									
+								</dt>
+								<dd>The index of the page that is currently visible in the viewer.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="UpdateVisiblePages"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>UpdateVisiblePages</b>()
+					
+					</div>
+					<div class="description">
+						Notifies the document viewer that the visible pages have changedbut does not draw any pages.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="ZoomTo"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>ZoomTo</b>(zoom, x, y)
+					
+					</div>
+					<div class="description">
+						Adjusts the viewer's zoom factor, and positions the point (x,y) at the upper left corner of the viewer.  Only renders if a document has been loaded.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{float}</span> <b>zoom</b>
+									
+								</dt>
+								<dd>Zoom value.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>x</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Horizontal position to scroll to.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>y</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Vertical position to scroll to.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Fri Jun 28 2013 12:54:14 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

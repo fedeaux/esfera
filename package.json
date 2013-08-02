@@ -1,0 +1,21 @@
+{
+  "main": "index.html",
+  "name": "Awesomeness",
+  "description": "This is awesome",
+  "version": "0.1.0",
+  "keywords": [ "demo", "node-webkit" ],
+  "window": {
+    "title": "Esfera will be mine",
+    "icon": "link.png",
+    "toolbar": false,
+    "frame": true,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

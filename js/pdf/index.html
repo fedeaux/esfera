@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+        </style>
+        <link rel="stylesheet" href="assets/style.css" />
+        <link rel="stylesheet" href="assets/colorbox/colorbox.css" />
+        <script src="assets/jquery-1.8.3.min.js"></script>
+        <script src="assets/colorbox/jquery.colorbox-min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+            });
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="wrapper" style="text-align:center">
+                <h1>PDFTron PDFNet WebViewer</h1>    
+            </div>
+        </div>
+        <div class="sub-header  ">
+            <ul class="menu" >
+                <li><a href="index.html" class="active">Overview</a></li>
+                <li><a href="whatsnew.html">What's New</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="samples.html">Samples</a></li>
+            </ul>
+
+            <!--            <a href="../../index.html">Home</a> &lt;&lt; HTML5 &lt;&lt; Demo-->
+        </div>
+        <div id="content">
+
+            <div class="wrapper">
+                <h2>Overview</h2>
+                <div class="project">
+
+                    <h3>About WebViewer</h3>
+                    <p>
+                        PDFTron WebViewer is a cross-platform solution that offers a seamless and effective way to embed viewing of PDF and other document formats directly within your Web application.
+
+                    </p>
+                    <div style="font-style: italic; font-weight: bold">
+                        "View any document, anywhere."
+                    </div>
+
+                    <p>
+                        Any document: By converting all supported document types into a web-optimized XPS based file, called XOD, the WebViewer is able to deliver consistent results in viewing different document types.
+                        With the support of PDFNet's virtual printer driver, any document type that can be printed to a printer can be converted to a XOD file!
+                    </p>
+                    <p>
+                        Anywhere: the WebViewer is actually comprised of multiple browser clients: HTML5, mobile, Silverlight, and Flash.
+                        By default, WebViewer uses its HTML5 viewer as the preferred choice. It leverages the latest browser technologies to provide the most features (including annotations, DRM, and offline viewing).
+                        For users with older browsers, the Silverlight or Flash viewer will be loaded as a fallback to allow for maximum readership.
+                    </p>
+                    <p>
+                    <u>A summary of viewer technology preference</u><br/>
+                    HTML5: IE9 and above, Firefox, Chrome, Safari, Opera<br/>
+                    Mobile: Safari iOS 5 and above, Android 2.2 and above<br/>
+                    Silverlight: IE7, IE8<br/>
+                    Flash: IE6 or below<br/>
+                    </p>
+
+
+                </div>
+
+                <div class="project">
+                    <h3>What's Included</h3>
+
+                    <p>
+                        The WebViewer solution consists of a universal viewer wrapper (WebViewer.js) and WebViewer implementations (ReaderControl) written in various browser technologies.
+                        WebViewer.js will detect users' browser environment and choose the best viewer technology to use.
+                    </p>
+
+                    
+                    <u>WebViewer Package File Structure:</u>
+                    <ul>
+                        <li class="list-icon-folder"><b>html5:</b> folder containing the primary HTML5 and Mobile WebViewer</li>
+                        <li class="list-icon-folder"><b>silverlight:</b> folder containing the fallback Silverlight WebViewer</li>
+                        <li class="list-icon-folder"><b>flash:</b> folder containing the fallback Flash WebViewer</li>
+                        <li class="list-icon-folder"><b>doc:</b> documentation for WebViewer.js</li>
+                        <li class="list-icon-folder"><b>samples</b> a collection of WebViewer samples</li>
+
+                        <li class="list-icon-file"><b>WebViewer.js:</b> the un-minified debug version of the universal WebViewer control</li>
+                        <li class="list-icon-file"><b>WebViewer.min.js:</b> the minified universal WebViewer control</li>
+                        <li class="list-icon-file"><b>clientaccesspolicy.xml:</b> a client access policy to be placed in the root web server folder to support Silverlight</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Components</h3>
+                    <u>Components within WebViewer HTML5 Viewer:</u>
+                    <p>
+                        The <b>DocumentViewer</b> is a control that provides the core features of XOD viewing.
+                        There are no menus or any other UI controls; this allows you to create drastically different UI layouts (e.g. your own custom flip page control.)
+                        <br/>
+                        See: CoreControls.js
+                    </p>
+                    <p>
+                        The HTML5 <b>ReaderControl</b> is a full-feature, customizable control that builds on top of DocumentViewer.
+                        Provided is a UI menu for navigation, as well as a side panel for display information like thumbnail previews and bookmarks.
+                        The ReaderControl has all the features that a user would expect from a document reading application.
+
+                        There is also a customization framework that makes it easy to customize the look-and-feel, or even add your own custom features!
+                        The UI controls are compatible with jQuery UI themes, so it's easy to re-skin and re-brand the ReaderControl.
+
+                        Moreover, the ReaderControl provides a complete framework for annotations!
+
+                        While it is recommended to use the customization framework for any customizations, the source code for ReaderControl is publicly available and may be modified directly.
+                        <br/>
+                        See: ReaderControl.js ReaderControl.html ReaderControl.css
+                    </p>
+
+                    <p>The <b>MobileReaderControl</b> is an alternate ReaderControl based on HTML5 that is optimized for tablets and other mobile touch devices.
+                        This viewer provides the same core features of ReaderControl but presented in a different user interface that takes account of touch events and limited screen space.
+                        <br/>
+                        See: MobileReaderControl.js MobileReaderControl.html
+                    </p>
+
+
+                    <u>Components with WebViewer Silverlight & Flash:</u>
+                    <p>
+                        Similar to HTML5, WebViewer Silverlight and Flash also have corresponding DocumentViewer and ReaderControl components.
+                        These are fully usable UI controls for reading XOD files as an alternative to HTML5.
+                        Note that these ReaderControls do not provide all the functionality supported in HTML5. Namely, the Flash controls currently do not support annotations.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="wrapper top-line">
+                <a href="http://www.pdftron.com" target="_blank">&COPY; 2013 PDFTron Systems, Inc.</a>
+            </div>
+
+        </div>
+    </body>
+</html>
+

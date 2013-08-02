@@ -1,0 +1,3 @@
+class ScreenBlocker
+  constructor: (target) ->
+    

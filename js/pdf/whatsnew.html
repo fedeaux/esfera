@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+        </style>
+        <link rel="stylesheet" href="assets/style.css" />
+        <link rel="stylesheet" href="assets/colorbox/colorbox.css" />
+        <script src="assets/jquery-1.8.3.min.js"></script>
+        <script src="assets/colorbox/jquery.colorbox-min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.list-icon-new-hot').attr('title', 'Major Feature');
+                $('.list-icon-new').attr('title', 'Feature');
+                $('.list-icon-bug').attr('title', 'Bug Fix');
+            });
+        </script>
+        <style>
+            h4{
+                text-decoration: underline
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="wrapper" style="text-align:center">
+                <h1>PDFTron PDFNet WebViewer</h1>    
+            </div>
+
+        </div>
+        <div class="sub-header">
+            <ul class="menu" >
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="whatsnew.html" class="active">What's New</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="samples.html">Samples</a></li>
+            </ul>
+        </div>
+        <div id="content">
+
+            <div class="wrapper">
+                <h2>What's new</h2>    
+                <div class="project">
+                    <h4>June 26, 2013 version 1.5.0</h4>
+                    
+                    <b>Upgrade Notes</b>
+                    <ul>
+                        <li>HTML5 ReaderControl functions have been modified to be more consistent with the WebViewer function naming scheme. This may affect
+                            anyone that has made customizations to the HTML5 ReaderControls directly or through config files.</li>
+                        <li>Please refer to html5/WebViewerInterface.js for the function names and review your customizations to make sure that they are using
+                            the new naming scheme.</li>
+                    </ul>
+                    
+                    <b>WebViewer HTML5 Updates</b>
+                    <ul>
+                        <li class="list-icon-new-hot">Added internationalization support</li>
+                        <li class="list-icon-new-hot">Added Pause, Resume and Cancel CanvasAsync functions to go with LoadCanvasAsync</li>
+                        <li class="list-icon-new">Added keyboard shortcuts for annotation copy, paste, save and toggle</li>
+                        <li class="list-icon-new">The scroll wheel now changes pages in non-continuous modes</li>
+                        <li class="list-icon-new">Removed the extra iframe that was used by the desktop viewer</li>
+                        <li class="list-icon-new">Added a persistent custom attribute "Custom" to all annotations</li>
+						<li class="list-icon-new">Allowed customization of annotation popup element</li>
+                        <li class="list-icon-new">Updated how display modes are handled so that they can be customized more easily</li>
+                        <li class="list-icon-new">Added consistent console warnings when attempting to call a WebViewer function that isn't implemented</li>
+                        <li class="list-icon-new">Annotation notes are now displayed in the same location when rotating or changing the zoom level</li>
+						<li class="list-icon-new">Improved performance when loading a large xfdf file</li>
+                        <li class="list-icon-bug">Fixed issue with popups sometimes not being able to be minimized</li>
+                        <li class="list-icon-bug">Fixed issue where the popup note tail would sometimes be drawn in the wrong location</li>
+                        <li class="list-icon-bug">Fixes for display modes when using WebViewer</li>
+                        <li class="list-icon-bug">Fixed issue where annotations with transparent stroke or fill were not displaying correctly in the annotation menu</li>
+                        <li class="list-icon-bug">Fixed issue where the annotation selection rectangle was not being displayed</li>
+						<li class="list-icon-bug">Fixed issue when loading form data into a field whose name contains whitespace</li>
+                        <li class="list-icon-bug">Fixed issue where a page number could not be entered and changed to in IE</li>
+                    </ul>
+                    
+                    <b>WebViewer Mobile Updates</b>
+                    <ul>
+                        <li class="list-icon-new-hot">Reworked pinch zooming so that the zoom level could be increased</li>
+                        <li class="list-icon-new-hot">Added double tap zooming support</li>
+                        <li class="list-icon-new-hot">Added support for Windows tablets and Windows Phone</li>
+                        <li class="list-icon-new-hot">Added support for embedding in a native Android app</li>
+                        <li class="list-icon-new">Added support for the get/set zoom level WebViewer functions</li>
+                        <li class="list-icon-new">Increased the size of the hit box for annotation control points</li>
+                        <li class="list-icon-new">Menu icons are now preloaded</li>
+                        <li class="list-icon-bug">Added workarounds so that the page number box works on Android</li>
+                        <li class="list-icon-bug">Use the correct font size for widgets</li>
+                        <li class="list-icon-bug">Fixed issue with swiping quickly back and forth to the same page</li>
+                        <li class="list-icon-bug">Fixed issue where toggling annotations would not hide any annotations on adjacent pages</li>
+                        <li class="list-icon-bug">Fixed issues with searching while zoomed in</li>
+                        <li class="list-icon-bug">Fixed issues with interactions between popup notes and the fixed menus</li>
+                        <li class="list-icon-bug">Fixed issue where pages could be displayed in the wrong location</li>
+                    </ul>
+                    
+                    <b>WebViewer Flash Updates</b>
+                    <ul>
+                        <li class="list-icon-new-hot">Added support for loading encrypted XOD files</li>
+                    </ul>
+                    
+                    <b>WebViewer Silverlight Updates</b>
+                    <ul>
+                        <li class="list-icon-new-hot">Added support for xfdf annotations</li>
+                    </ul>
+				</div>
+                <div class="project">    
+                    <h4>April 17, 2013 version 1.4.2</h4>
+                    <b>WebViewer HTML5 Updates</b>
+                    <ul>
+                        <li class="list-icon-new">Added annotationUser and annotationAdmin options</li>
+                        <li class="list-icon-new">Added a cache hinting parameter to the part retrievers</li>
+                        <li class="list-icon-new">Added the ability to pass custom data to the WebViewer</li>
+                        <li class="list-icon-new">Added support for even-odd rule in Chrome and Firefox</li>
+                        <li class="list-icon-new">Only center annotations if they are selected from the annotation list</li>
+                        <li class="list-icon-bug">Fixed issues with using serverUrl from WebViewer</li>
+                        <li class="list-icon-bug">Fixed issues related to resizing the window while in non-zoom fit modes</li>
+                        <li class="list-icon-bug">Fix to allow dotted lines to be displayed in IE and Chrome</li>
+                        <li class="list-icon-bug">Fixed an issue where large documents would not load at high zoom levels</li>
+                        <li class="list-icon-bug">Fixed an issue with mailto links</li>
+                        <li class="list-icon-bug">Fixed an issue where some WebViewer options were not being set correctly</li>
+                        <li class="list-icon-bug">Jump to an annotation correctly when selecting it from the annotation list and it's not in view</li>
+                    </ul>
+                    
+                    <b>WebViewer Mobile Updates</b>
+                    <ul>
+                        <li class="list-icon-new">Allow overriding of the LoadDocument function in custom config files</li> 
+                    </ul>
+                    
+                    <h4>February 26, 2013 version 1.4.1</h4>
+                    <b>WebViewer HTML5 Updates</b>
+                    <ul>
+                        <li class="list-icon-bug">Fixed an issue where popups were sometimes not able to be minimized</li>
+                        <li class="list-icon-bug">Fixed a crash in Safari for Windows</li>
+                        <li class="list-icon-bug">Fixed an issue where pages would sometimes not load until they were completely visible</li>
+                    </ul>
+                    
+                    <b>WebViewer Mobile Updates</b>
+                    <ul>
+                        <li class="list-icon-bug">Fixed an issue with annotation toggling</li>
+                    </ul>
+                    
+                    <h4>February 12, 2013 version 1.4.0</h4>
+                    <b>WebViewer HTML5 Updates</b>
+                    <ul>
+                        <li class="list-icon-new-hot">Added support for PDF Forms (submit form data directly from viewer)</li>
+                        <li class="list-icon-new-hot">Introduced new Customization Framework through configuration files</li>
+                        <li class="list-icon-new-hot">Added DRM Support through XOD encryption</li>                        
+                        <li class="list-icon-new">Added support for theming in ReaderControl through jQuery UI</li>                        
+                        <li class="list-icon-new">Added support for offline mode</li>       
+                        <li class="list-icon-new">API Reference now includes documentation for ReaderControl</li>                        
+                        <li class="list-icon-bug">Fixed an issue where annotation popup content was not being loaded</li>                        
+                        <li class="list-icon-bug">Fixed an issue in the thumbnail panel that caused the previews not to show up for large documents</li>                        
+                    </ul>
+
+                    <b>WebViewer Mobile Updates</b>
+                    <ul class="list-icon-new">
+                        <li class="list-icon-new-hot">Added support for annotation loading and saving</li>       
+                        <li class="list-icon-new-hot">Added support for PDF Forms (submit form data directly from viewer)</li>
+                        <li class="list-icon-new-hot">Added DRM Support through XOD encryption</li>       
+                        <li class="list-icon-new">Partial support for the new HTML5 Customization Framework</li>         
+                        <li class="list-icon-new">New and improved user interface</li>         
+                        <li class="list-icon-new">Added support for offline mode</li>       
+                    </ul>
+
+                </div>
+                <div class="project">
+                    <h4>November 27, 2012 version 1.3.2</h4>
+                    <b>WebViewer HTML5 Updates</b>
+                    <ul class="list-icon-new">
+                        <li>Added ctrl+click multi-selection support for annotations.</li>
+                        <li>Control points are now fixed sized, regardless of zoom level.</li>
+                        <li>Added a basic PHP sample server script to handle server-side annotation saving and loaded. See: annotationHandler.php</li>           
+                    </ul>
+
+                    <b>WebViewer Mobile Updates</b>
+                    <ul>
+                        <li class="list-icon-bug">Fixed an issue in rendering certain images on retina display devices.</li>
+                        <li class="list-icon-bug">Fixed a problem where documents links were not working in the HTML5 mobile viewer.</li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div id="footer">
+            <div class="wrapper top-line">
+                <a href="http://www.pdftron.com" target="_blank">&COPY; 2013 PDFTron Systems, Inc.</a>
+            </div>
+
+        </div>
+    </body>
+</html>
