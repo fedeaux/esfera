@@ -1,11 +1,11 @@
 {
   "main": "index.html",
-  "name": "Awesomeness",
-  "description": "This is awesome",
+  "name": "EsferaPDF",
+  "description": "Esfera PDF Application",
   "version": "0.1.0",
   "keywords": [ "demo", "node-webkit" ],
   "window": {
-    "title": "Esfera will be mine",
+    "title": "Editora Esfera",
     "icon": "link.png",
     "toolbar": false,
     "frame": true,
