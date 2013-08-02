@@ -2,12 +2,9 @@
 (function() {
 
   $(function() {
-    var base_url, bio, f, get_files_directory, get_iframed_document, isNumber, local_element_viewer, local_url, overlay_controller, pdf, pdfs, remote_element_viewer, remote_web_viewer, sb,
+    var base_url, bio, f, fs, get_files_directory, get_iframed_document, isNumber, local_element_viewer, local_url, overlay_controller, pdf, pdfs, remote_element_viewer, remote_web_viewer, sb,
       _this = this;
-    console.log(JSON.stringify({
-      name: "My Web App",
-      main: 'index.html'
-    }));
+    fs = require('fs');
     isNumber = function(n) {
       return !isNaN(parseFloat(n)) && isFinite(n);
     };
@@ -16,8 +13,9 @@
     };
     base_url = document.URL.replace('index.html', '');
     get_files_directory = function() {
-      return base_url + 'files/Biologia/120.xod';
+      return base_url + 'files/ObjTest/pdf_tron.pdf.xod';
     };
+    window.evil_hacked_url = base_url + 'files/ObjTest/';
     remote_element_viewer = document.getElementById('remote_viewer');
     local_element_viewer = document.getElementById('local_viewer');
     local_url = document.URL;

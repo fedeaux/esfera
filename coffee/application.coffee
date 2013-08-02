@@ -1,6 +1,5 @@
 $(() ->
-
-  console.log JSON.stringify {name: "My Web App", main: 'index.html'}
+  fs = require 'fs'  
 
   isNumber = (n) ->
     !isNaN(parseFloat(n)) and isFinite(n)
@@ -11,7 +10,9 @@ $(() ->
   base_url = document.URL.replace 'index.html', ''
 
   get_files_directory = () =>
-    base_url+'files/Biologia/120.xod'
+    base_url+'files/ObjTest/pdf_tron.pdf.xod'
+
+  window.evil_hacked_url = base_url+'files/ObjTest/'
 
   remote_element_viewer = document.getElementById 'remote_viewer'
   local_element_viewer = document.getElementById 'local_viewer'

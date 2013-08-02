@@ -1,0 +1,7 @@
+(structure)
+
+console.log structure
+
+ul.menu
+@ for s in structure
+  li.menu_item = +s+
