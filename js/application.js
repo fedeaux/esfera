@@ -20,7 +20,11 @@
     local_element_viewer = document.getElementById('local_viewer');
     local_url = document.URL;
     overlay_controller = new OverlayController($('#remote_viewer'));
-    sb = new ScreenBlocker($('#wrapper'));
+    sb = new ScreenBlocker($('#wrapper'), {
+      img_src: 'img/everywhere-logo.png',
+      img_width: 210,
+      img_height: 65
+    });
     f = function(e, d) {
       var doc;
       doc = get_iframed_document('#remote_viewer iframe');

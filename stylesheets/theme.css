@@ -1,7 +1,6 @@
 /* line 1, ../sass/_screen_blocker.sass */
 .screen_blocker {
   background-color: black;
-  background-image: url(img/loader.gif);
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -9,6 +8,12 @@
   top: 0;
   left: 0;
   position: fixed;
+}
+/* line 11, ../sass/_screen_blocker.sass */
+.screen_blocker .screen_blocker_image_wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 /* line 4, ../sass/theme.sass */

@@ -21,17 +21,25 @@
     };
 
     ScreenBlocker.prototype.create_blocker = function() {
-      var name, value, _ref, _results;
+      var name, value, wrapper_margin_left, wrapper_margin_top, _ref;
       this.blocker = $('<div class="screen_blocker"></div>');
+      this.wrapper = $('<div class="screen_blocker_image_wrapper"></div>');
+      this.img = $('<img src="' + this.args['img_src'] + '"\
+                   height="' + this.args.img_height + '"\
+                   width="' + this.args.img_width + '"/>');
+      this.blocker.html(this.wrapper);
+      this.wrapper.html(this.img);
       if (this.args.custom_css != null) {
         _ref = this.args.custom_css;
-        _results = [];
         for (name in _ref) {
           value = _ref[name];
-          _results.push(this.blocker.css(name, value));
+          this.blocker.css(name, value);
         }
-        return _results;
       }
+      wrapper_margin_left = (-parseInt(this.args.img_width) / 2) + 'px';
+      wrapper_margin_top = (-parseInt(this.args.img_height) / 2) + 'px';
+      this.wrapper.width(this.img.width()).height(this.img.height()).css('margin-left', wrapper_margin_left).css('margin-top', wrapper_margin_top);
+      return Animations.blink(this.img);
     };
 
     return ScreenBlocker;

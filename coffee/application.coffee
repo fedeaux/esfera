@@ -19,7 +19,10 @@ $(() ->
   local_url = document.URL
 
   overlay_controller = new OverlayController $ '#remote_viewer'
-  sb = new ScreenBlocker $ '#wrapper'
+  sb = new ScreenBlocker $('#wrapper'),
+    img_src: 'img/everywhere-logo.png'
+    img_width: 210
+    img_height: 65
 
   f = (e, d) ->
     doc = get_iframed_document '#remote_viewer iframe'
