@@ -1,5 +1,5 @@
 $(() ->
-  fs = require 'fs'  
+  fs = require 'fs'
 
   isNumber = (n) ->
     !isNaN(parseFloat(n)) and isFinite(n)
@@ -35,7 +35,10 @@ $(() ->
     new ScreenFitter '.pdf_viewer', {
       container: $(window),
       onResize: overlay_controller.update_overlay_dimensions
-    }   
+      strategy: 'match_screen'
+    }
+
+    change_vendor_behaviour(doc)
 
   $(window).bind 'documentLoaded', f
 

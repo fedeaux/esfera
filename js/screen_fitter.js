@@ -54,6 +54,8 @@
       this.set_containers_values();
       if (this.args.strategy === 'fit_paper') {
         return this.fit_paper();
+      } else if (this.args.strategy === 'match_screen') {
+        return this.match_screen();
       }
     };
 
@@ -70,18 +72,19 @@
       }
       this.target.width(width);
       this.target.height(height);
-      this.target.offset({
+      return this.target.offset({
         left: margin_left
       });
-      if (this.args.onResize != null) {
-        return this.args.onResize(this.target);
-      }
     };
 
     ScreenFitter.prototype.fit_paper = function() {
       var dim;
       dim = Math.min(this.container_width, this.args.max_width);
       return this.set_target_dimensions(dim, dim * 4 / 3);
+    };
+
+    ScreenFitter.prototype.match_screen = function() {
+      return this.set_target_dimensions(this.container_width, this.container_height);
     };
 
     return ScreenFitter;

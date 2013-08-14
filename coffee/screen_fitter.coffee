@@ -41,6 +41,9 @@ class @ScreenFitter
     if @args.strategy == 'fit_paper'
       @fit_paper()
 
+    else if @args.strategy == 'match_screen'
+      @match_screen()
+
   is_portrait: () ->
     @container_height > @container_width
 
@@ -52,19 +55,14 @@ class @ScreenFitter
     else
       margin_left = 0
 
-    # @target.animate
-    #   width: width
-    #   height: height
-    #   'margin-left': margin_left
-    #   complete: () =>
-    #     console.log 'oe', @args
-    #     @args.onResize(@target) if @args.onResize?
-
     @target.width width
     @target.height height
     @target.offset {left: margin_left}
-    @args.onResize(@target) if @args.onResize?
+    #@args.onResize(@target) if @args.onResize?
 
   fit_paper: () ->
     dim = Math.min @container_width, @args.max_width
     @set_target_dimensions dim, dim * 4/3
+
+  match_screen: () ->
+    @set_target_dimensions @container_width, @container_height
