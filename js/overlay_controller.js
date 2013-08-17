@@ -4,8 +4,9 @@
 
   this.OverlayController = (function() {
 
-    function OverlayController(container) {
+    function OverlayController(container, base_url) {
       this.container = container;
+      this.base_url = base_url;
       this.set_dimensions = __bind(this.set_dimensions, this);
 
       this.update_overlay_dimensions = __bind(this.update_overlay_dimensions, this);
@@ -42,7 +43,7 @@
     OverlayController.prototype.create_iframe = function(link) {
       var overlay;
       this.set_dimensions(this.container);
-      overlay = new iFrameOverlay(this.container, this.dimensions, link, this);
+      overlay = new iFrameOverlay(this.container, this.dimensions, this.base_url + link.target, this);
       return this.overlays.push(overlay);
     };
 

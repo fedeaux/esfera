@@ -3,10 +3,10 @@
 
   this.iFrameOverlay = (function() {
 
-    function iFrameOverlay(container, dimensions, link) {
+    function iFrameOverlay(container, dimensions, url) {
       this.container = container;
       this.dimensions = dimensions;
-      this.link = link;
+      this.url = url;
       this.create_markup();
       this.position_element();
     }
@@ -17,7 +17,7 @@
 
     iFrameOverlay.prototype.create_markup = function() {
       this.wrapper = $('<div class="overlay_wrapper"></div>');
-      this.iframe = $('<iframe class="overlay_iframe" src="' + window.evil_hacked_url + this.link.target + '"></iframe>');
+      this.iframe = $('<iframe class="overlay_iframe" src="' + this.url + '"></iframe>');
       this.close = $('<div class="close"> X </div>');
       this.close.click(function() {
         return $(this).parent().remove();

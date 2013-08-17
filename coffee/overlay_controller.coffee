@@ -1,5 +1,5 @@
 class @OverlayController
-  constructor: (@container) ->
+  constructor: (@container, @base_url) ->
     @overlays = []
     @set_dimensions @container
 
@@ -17,5 +17,5 @@ class @OverlayController
 
   create_iframe: (link) ->
     @set_dimensions @container
-    overlay = new iFrameOverlay @container, @dimensions, link, this
+    overlay = new iFrameOverlay @container, @dimensions, @base_url+link.target, this
     @overlays.push overlay

@@ -2,29 +2,18 @@
 (function() {
 
   $(function() {
-    var base_url, bio, f, fs, get_files_directory, get_iframed_document, isNumber, local_element_viewer, local_url, overlay_controller, pdf, pdfs, remote_element_viewer, remote_web_viewer, sb,
-      _this = this;
+    var bio, f, fs, local_element_viewer, overlay_controller, remote_element_viewer, remote_web_viewer, screen_blocker;
     fs = require('fs');
-    isNumber = function(n) {
-      return !isNaN(parseFloat(n)) && isFinite(n);
-    };
-    get_iframed_document = function(selector) {
-      return $(selector)[0].contentWindow;
-    };
-    base_url = document.URL.replace('index.html', '');
-    get_files_directory = function() {
-      return base_url + 'files/ObjTest/pdf_tron.pdf.xod';
-    };
-    window.evil_hacked_url = base_url + 'files/ObjTest/';
-    remote_element_viewer = document.getElementById('remote_viewer');
-    local_element_viewer = document.getElementById('local_viewer');
-    local_url = document.URL;
-    overlay_controller = new OverlayController($('#remote_viewer'));
-    sb = new ScreenBlocker($('#wrapper'), {
+    new Reloader();
+    setup_urls();
+    overlay_controller = new OverlayController($('#remote_viewer'), base_url + 'files/ObjTest/');
+    screen_blocker = new ScreenBlocker($('#wrapper'), {
       img_src: 'img/everywhere-logo.png',
       img_width: 210,
       img_height: 65
     });
+    remote_element_viewer = document.getElementById('remote_viewer');
+    local_element_viewer = document.getElementById('local_viewer');
     f = function(e, d) {
       var doc;
       doc = get_iframed_document('#remote_viewer iframe');
@@ -33,7 +22,7 @@
           return overlay_controller.create_iframe(link);
         };
       });
-      sb.unblock();
+      screen_blocker.unblock();
       new ScreenFitter('.pdf_viewer', {
         container: $(window),
         onResize: overlay_controller.update_overlay_dimensions,
@@ -42,11 +31,6 @@
       return change_vendor_behaviour(doc);
     };
     $(window).bind('documentLoaded', f);
-    pdfs = {
-      '1': 'MWNiYmRhYmUtZmZmMy00OTBlLWJhN2ItODI3ODQ3Nzk4OTRk',
-      '2': 'ZDljMzU3OGEtNmE5YS00NzUzLWIxN2MtZGEwYTE4NDgxNTVm'
-    };
-    pdf = pdfs['1'];
     bio = get_files_directory();
     return remote_web_viewer = new PDFTron.WebViewer({
       initialDoc: bio,
