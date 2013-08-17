@@ -1,7 +1,7 @@
 (function() {
-    // i18n.setLng('pt_br', function() {
-    // 	$('body').i18n();
-    // });
+    i18n.setLng('pt_br', function() {
+     	$('body').i18n();
+    });
 
     $('#fullScreenButton').remove();
     $('#rotateButton').remove();
