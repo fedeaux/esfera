@@ -28,8 +28,6 @@ class @PdfViewer
       strategy: 'match_screen'
     }
 
-    change_vendor_behaviour(doc)
-
   before_document_load: () ->
     @overlay_controller = new OverlayController $('#remote_viewer'), base_url+'files/ObjTest/'
 

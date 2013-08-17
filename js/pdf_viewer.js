@@ -31,12 +31,11 @@
         };
       });
       this.screen_blocker.unblock();
-      new ScreenFitter('.pdf_viewer', {
+      return new ScreenFitter('.pdf_viewer', {
         container: $(window),
         onResize: overlay_controller.update_overlay_dimensions,
         strategy: 'match_screen'
       });
-      return change_vendor_behaviour(doc);
     };
 
     PdfViewer.prototype.before_document_load = function() {

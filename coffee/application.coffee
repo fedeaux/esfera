@@ -1,6 +1,4 @@
 $(() ->
-  #file_system = require 'fs'
-
   new Reloader()
   setup_urls()
 
