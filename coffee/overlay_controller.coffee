@@ -5,11 +5,9 @@ class @OverlayController
 
   update_overlay_dimensions: () =>
     @set_dimensions()
-    console.log 'uai'
 
     for overlay in @overlays
-      console.log 'hey'
-      #overlay.resize @dimensions
+      overlay.resize @dimensions
 
   set_dimensions: (obj = @container) =>
     offset = obj.offset()

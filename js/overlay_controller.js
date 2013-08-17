@@ -18,12 +18,11 @@
     OverlayController.prototype.update_overlay_dimensions = function() {
       var overlay, _i, _len, _ref, _results;
       this.set_dimensions();
-      console.log('uai');
       _ref = this.overlays;
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         overlay = _ref[_i];
-        _results.push(console.log('hey'));
+        _results.push(overlay.resize(this.dimensions));
       }
       return _results;
     };
