@@ -18,11 +18,12 @@
     OverlayController.prototype.update_overlay_dimensions = function() {
       var overlay, _i, _len, _ref, _results;
       this.set_dimensions();
+      console.log('uai');
       _ref = this.overlays;
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         overlay = _ref[_i];
-        _results.push(overlay.resize(this.dimensions));
+        _results.push(console.log('hey'));
       }
       return _results;
     };
@@ -35,7 +36,7 @@
       offset = obj.offset();
       return this.dimensions = {
         width: obj.width(),
-        height: this.container.height(),
+        height: obj.height(),
         offset: offset
       };
     };
@@ -44,7 +45,8 @@
       var overlay;
       this.set_dimensions(this.container);
       overlay = new iFrameOverlay(this.container, this.dimensions, this.base_url + link.target, this);
-      return this.overlays.push(overlay);
+      this.overlays.push(overlay);
+      return console.log(this.overlays.length);
     };
 
     return OverlayController;

@@ -6,7 +6,7 @@ class @ScreenFitter
       strategy: 'fit_paper'
       container: @target.parent()
       lazy_apply_strategy_delay: 250
-      onResize: null
+      on_resize: null
       max_width: 960
 
     @args = {}
@@ -48,8 +48,6 @@ class @ScreenFitter
     @container_height > @container_width
 
   set_target_dimensions: (width, height) ->
-    # @target.width width
-    # @target.height height
     if width < @container_width
       margin_left = (@container_width - width)/2
     else
@@ -58,11 +56,13 @@ class @ScreenFitter
     @target.width width
     @target.height height
     @target.offset {left: margin_left}
-    #@args.onResize(@target) if @args.onResize?
+    @args.on_resize(@target) if @args.on_resize? # Dry dry dry
 
   fit_paper: () ->
     dim = Math.min @container_width, @args.max_width
     @set_target_dimensions dim, dim * 4/3
 
   match_screen: () ->
-    @set_target_dimensions @container_width, @container_height
+    @target.width @container_width
+    @target.height @container_height
+    @args.on_resize(@target) if @args.on_resize? # Dry dry dry

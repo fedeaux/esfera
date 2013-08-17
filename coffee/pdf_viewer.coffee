@@ -24,7 +24,7 @@ class @PdfViewer
 
     new ScreenFitter '.pdf_viewer', {
       container: $(window),
-      onResize: overlay_controller.update_overlay_dimensions
+      on_resize: overlay_controller.update_overlay_dimensions
       strategy: 'match_screen'
     }
 

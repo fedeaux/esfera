@@ -19,7 +19,7 @@
         strategy: 'fit_paper',
         container: this.target.parent(),
         lazy_apply_strategy_delay: 250,
-        onResize: null,
+        on_resize: null,
         max_width: 960
       };
       this.args = {};
@@ -72,9 +72,12 @@
       }
       this.target.width(width);
       this.target.height(height);
-      return this.target.offset({
+      this.target.offset({
         left: margin_left
       });
+      if (this.args.on_resize != null) {
+        return this.args.on_resize(this.target);
+      }
     };
 
     ScreenFitter.prototype.fit_paper = function() {
@@ -84,7 +87,11 @@
     };
 
     ScreenFitter.prototype.match_screen = function() {
-      return this.set_target_dimensions(this.container_width, this.container_height);
+      this.target.width(this.container_width);
+      this.target.height(this.container_height);
+      if (this.args.on_resize != null) {
+        return this.args.on_resize(this.target);
+      }
     };
 
     return ScreenFitter;
