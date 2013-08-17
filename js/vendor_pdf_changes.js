@@ -4,7 +4,6 @@
   this.change_vendor_behaviour = function(doc) {
     var dafuq;
     this.sidePanel = doc.readerControl.$thumbnailViewContainer.parents('#sidePanel');
-    console.log(this.sidePanel.length);
     dafuq = {
       "transition": "none !important",
       "-moz-transition": "none !important",

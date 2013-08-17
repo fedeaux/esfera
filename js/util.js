@@ -3,13 +3,27 @@
   var _this = this,
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
+  this.is_app = function() {
+    return typeof require === 'function';
+  };
+
   this.get_iframed_document = function(selector) {
     return $(selector)[0].contentWindow;
   };
 
+  this.get_url_arguments = function() {
+    var args;
+    args = {};
+    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/g, function(m, key, value) {
+      return args[key] = value;
+    });
+    return args;
+  };
+
   this.setup_urls = function() {
     window.local_url = document.URL;
-    return window.base_url = document.URL.replace('index.html', '');
+    window.base_url = document.URL.replace('index.html', '');
+    return window._get = get_url_arguments();
   };
 
   this.get_files_directory = function() {

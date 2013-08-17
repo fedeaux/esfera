@@ -1,9 +1,20 @@
+@is_app = () ->
+  return typeof(require) == 'function'
+
 @get_iframed_document = (selector) ->
   $(selector)[0].contentWindow
+
+@get_url_arguments = () ->
+  args = {}
+  window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/g, (m, key, value) ->
+    args[key] = value
+  )
+  args
 
 @setup_urls = () ->
   window.local_url = document.URL
   window.base_url = document.URL.replace 'index.html', ''
+  window._get = get_url_arguments()
 
 @get_files_directory = () =>
   base_url+'files/ObjTest/pdf_tron.pdf.xod'

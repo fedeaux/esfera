@@ -2,44 +2,17 @@
 (function() {
 
   $(function() {
-    var bio, f, fs, local_element_viewer, overlay_controller, remote_element_viewer, remote_web_viewer, screen_blocker;
-    fs = require('fs');
+    var PdfViewerArgs;
     new Reloader();
     setup_urls();
-    overlay_controller = new OverlayController($('#remote_viewer'), base_url + 'files/ObjTest/');
-    screen_blocker = new ScreenBlocker($('#wrapper'), {
-      img_src: 'img/everywhere-logo.png',
-      img_width: 210,
-      img_height: 65
-    });
-    remote_element_viewer = document.getElementById('remote_viewer');
-    local_element_viewer = document.getElementById('local_viewer');
-    f = function(e, d) {
-      var doc;
-      doc = get_iframed_document('#remote_viewer iframe');
-      doc.readerControl.docViewer.SetLinkReadyCallback(function(linkElement, link) {
-        return linkElement.onclick = function() {
-          return overlay_controller.create_iframe(link);
-        };
-      });
-      screen_blocker.unblock();
-      new ScreenFitter('.pdf_viewer', {
-        container: $(window),
-        onResize: overlay_controller.update_overlay_dimensions,
-        strategy: 'match_screen'
-      });
-      return change_vendor_behaviour(doc);
+    PdfViewerArgs = {
+      viewer_element_id: 'remote_viewer'
     };
-    $(window).bind('documentLoaded', f);
-    bio = get_files_directory();
-    return remote_web_viewer = new PDFTron.WebViewer({
-      initialDoc: bio,
-      type: 'html5,html5Mobile',
-      enableAnnotations: true,
-      cloudApiId: pdf,
-      path: "js/pdf/",
-      serverUrl: ''
-    }, remote_element_viewer);
+    if (is_app()) {
+      return new LocalPdfViewer(PdfViewerArgs);
+    } else {
+      return new RemotePdfViewer(PdfViewerArgs);
+    }
   });
 
 }).call(this);
