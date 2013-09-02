@@ -20,9 +20,15 @@
     return args;
   };
 
-  this.setup_urls = function() {
+  this.setup_local_urls = function() {
     window.local_url = document.URL;
     window.base_url = document.URL.replace('index.html', '');
+    return window._get = get_url_arguments();
+  };
+
+  this.setup_remote_urls = function() {
+    window.local_url = document.URL;
+    window.base_url = document.URL.split('?')[0];
     return window._get = get_url_arguments();
   };
 

@@ -9,5 +9,5 @@ class @RemotePdfViewer extends PdfViewer
 
   view: (@current_pdf) ->
     @web_viewer_arguments.cloudApiId = @current_pdf
-    @web_viewer_instance = new PDFTron.WebViewer(@web_viewer_arguments, @viewer_element)
+    @web_viewer_instance = new PDFTron.WebViewer @web_viewer_arguments, @viewer_element
 

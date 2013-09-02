@@ -4,13 +4,14 @@
   $(function() {
     var PdfViewerArgs;
     new Reloader();
-    setup_urls();
     PdfViewerArgs = {
       viewer_element_id: 'remote_viewer'
     };
     if (is_app()) {
+      setup_local_urls();
       return new LocalPdfViewer(PdfViewerArgs);
     } else {
+      setup_remote_urls();
       return new RemotePdfViewer(PdfViewerArgs);
     }
   });

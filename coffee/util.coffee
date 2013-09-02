@@ -11,9 +11,14 @@
   )
   args
 
-@setup_urls = () ->
+@setup_local_urls = () ->
   window.local_url = document.URL
   window.base_url = document.URL.replace 'index.html', ''
+  window._get = get_url_arguments()
+
+@setup_remote_urls = () ->
+  window.local_url = document.URL
+  window.base_url = document.URL.split('?')[0]
   window._get = get_url_arguments()
 
 @get_files_directory = () =>
