@@ -2,7 +2,7 @@ class @RemotePdfViewer extends PdfViewer
   constructor: (@args) ->
     super @args
 
-    @default_pdf = 'MWNiYmRhYmUtZmZmMy00OTBlLWJhN2ItODI3ODQ3Nzk4OTRk'
+    @default_pdf = 'NzliNjNlMmMtYTBlNi00NmE1LWI0NGMtZTJjN2JhNTlhNzUy'
 
     @current_pdf = window._get['pdf'] or @default_pdf
     @view @current_pdf

@@ -10,7 +10,7 @@
     function RemotePdfViewer(args) {
       this.args = args;
       RemotePdfViewer.__super__.constructor.call(this, this.args);
-      this.default_pdf = 'MWNiYmRhYmUtZmZmMy00OTBlLWJhN2ItODI3ODQ3Nzk4OTRk';
+      this.default_pdf = 'NzliNjNlMmMtYTBlNi00NmE1LWI0NGMtZTJjN2JhNTlhNzUy';
       this.current_pdf = window._get['pdf'] || this.default_pdf;
       this.view(this.current_pdf);
     }
